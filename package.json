@@ -1,0 +1,61 @@
+{
+    "private": false,
+    "type": "module",
+    "license": "ISC",
+    "version": "1.0.0",
+    "name": "@termehui/vmask",
+    "description": "text mask directive and filter for vue 3",
+    "main": "./dist/vmask.umd.js",
+    "module": "./dist/vmask.es.js",
+    "types": "./dist/vmask.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/vmask.d.ts",
+                "default": "./dist/vmask.es.js"
+            },
+            "require": {
+                "types": "./dist/vmask.d.ts",
+                "default": "./dist/vmask.umd.js"
+            }
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "vue3",
+        "mask"
+    ],
+    "authors": [
+        {
+            "email": "m.ajamekramy@gmail.com",
+            "homepage": "http://ekramy.ir",
+            "name": "Mojtaba Ekramy",
+            "role": "Developer"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/termehui/vmask"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && vite build",
+        "prepare": "npm run build",
+        "test": "vitest"
+    },
+    "dependencies": {
+        "text-mask-core": "^5.1.2",
+        "vue": "^3.3.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.6.2",
+        "@vitejs/plugin-vue": "^4.3.4",
+        "typescript": "^5.2.2",
+        "vite": "^4.4.9",
+        "vite-plugin-dts": "^3.5.3",
+        "vitest": "^0.34.4",
+        "vue-tsc": "^1.8.11"
+    }
+}
